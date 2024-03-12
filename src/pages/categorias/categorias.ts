@@ -31,10 +31,7 @@ export class CategoriasPage {
     this.CategoriaService.findAll().subscribe(response => {
       this.items = response;
     },
-    error => {
-      console.log(error);
-    })
-    console.log();
+    error => {});
   }
 
 }
