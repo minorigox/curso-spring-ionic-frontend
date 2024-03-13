@@ -12,7 +12,7 @@ export class HomePage {
 
   creds : CredenciaisDTO = {
     email: "",
-    senha: ""    
+    senha: ""
   }
 
   constructor(public navCtrl: NavController, 
@@ -34,7 +34,7 @@ export class HomePage {
       console.log(response.headers.get('Authorization'));
       this.navCtrl.setRoot('CategoriasPage');
     },
-    error => {})
+    error => {});
   }
 
 }
